@@ -6,6 +6,12 @@ A [Giter8](http://www.foundweekends.org/giter8/) template for new http4s modules
 sbt new http4s/module.g8
 ```
 
+## Am I in the right place?
+
+* _I'm a library author writing a new http4s integration_: Yes!
+* _I'm a library author, but not working on http4s_: No. Try [ChristopherDavenport/library.g8](https://github.com/ChristopherDavenport/library.g8).
+* _I'm an end user writing a new http4s app_: No. Try [http4s/http4s.g8](https://github.com/http4s/http4s.g8).
+
 ## Setup
 
 FIXME: This is partially obsolete.
