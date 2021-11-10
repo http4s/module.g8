@@ -1,16 +1,14 @@
-# My Giter 8 Template [![Build Status](https://travis-ci.org/ChristopherDavenport/library.g8.svg?branch=master)](https://travis-ci.org/ChristopherDavenport/library.g8)
+# http4s Module Template [![Build Status](https://travis-ci.org/http4s/module.g8.svg?branch=master)](https://travis-ci.org/http4s/module.g8)
 
-My [Giter8](http://www.foundweekends.org/giter8/) template for new library projects.
+A [Giter8](http://www.foundweekends.org/giter8/) template for new http4s modules.
 
 ```sbt
-sbt new ChristopherDavenport/library.g8
+sbt new http4s/module.g8
 ```
 
-## Example
-
-[library-g8-example](https://github.com/ChristopherDavenport/library-g8-example)
-
 ## Setup
+
+FIXME: This is partially obsolete.
 
 ### Github Pages
 
