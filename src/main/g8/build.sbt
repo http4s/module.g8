@@ -5,14 +5,18 @@ val Scala213 = "$scala_version$"
 ThisBuild / crossScalaVersions := Seq("$other_scala_version$", Scala213)
 ThisBuild / scalaVersion := Scala213
 
+ThisBuild / organization := "$organization$"
+ThisBuild / baseVersion := "0.1"
+
 ThisBuild / testFrameworks += new TestFramework("munit.Framework")
+
+ThisBuild / publishGithubUser := "$contributorUsername$"
+ThisBuild / publishFullName := "$contributorName$"
 
 val http4sV = "0.23.6"
 val munitCatsEffectV = "1.0.6"
 
-// Projects
 lazy val `$name$` = project.in(file("."))
-  .disablePlugins(MimaPlugin)
   .enablePlugins(NoPublishPlugin)
   .aggregate(core.jvm, core.js)
 
