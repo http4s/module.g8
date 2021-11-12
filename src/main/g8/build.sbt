@@ -55,14 +55,3 @@ lazy val core = crossProject(JVMPlatform, JSPlatform)
   ).jsSettings(
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule)},
   )
-
-lazy val site = project.in(file("site"))
-  .disablePlugins(MimaPlugin)
-  .enablePlugins(DavenverseMicrositePlugin)
-  .dependsOn(core.jvm)
-  .settings{
-    import microsites._
-    Seq(
-      micrositeDescription := "$project_description$",
-    )
-  }
