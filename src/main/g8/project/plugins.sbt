@@ -1,2 +1,1 @@
-addSbtPlugin("org.typelevel" % "sbt-typelevel" % "$sbt_typelevel_version$")
-addSbtPlugin("org.typelevel" % "sbt-typelevel-site" % "$sbt_typelevel_version$")
+addSbtPlugin("org.http4s" % "sbt-http4s-org" % "$sbt_http4s_org_version$")
