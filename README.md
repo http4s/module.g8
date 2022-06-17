@@ -1,8 +1,19 @@
 A [Giter8][g8] template for [sbt-typelevel][sbt-typelevel]!
 
 ```sbt
-sbt new valencik/proto-typelevel.g8
+sbt new typelevel/typelevel.g8
 ```
+
+
+Features
+--------
+
+- [sbt-typelevel][sbt-typelevel] and all its goodies
+- [sbt-typelevel-site][sbt-typelevel-site]
+- Nix Flake using [typelevel-nix][typelevel-nix]
+- Basic .gitignore
+- Scala code of conduct
+
 
 Template license
 ----------------
@@ -14,3 +25,5 @@ This template is distributed without any warranty. See <http://creativecommons.o
 
 [g8]: http://www.foundweekends.org/giter8/
 [sbt-typelevel]: https://typelevel.org/sbt-typelevel/
+[sbt-typelevel-site]: https://typelevel.org/sbt-typelevel/site.html
+[typelevel-nix]: https://github.com/typelevel/typelevel-nix

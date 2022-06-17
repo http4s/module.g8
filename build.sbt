@@ -25,7 +25,13 @@ ThisBuild / githubWorkflowJavaVersions := Seq(PrimaryJava, LTSJava)
 lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
-    name := "proto-typelevel.g8",
+    name := "typelevel.g8",
+    libraryDependencies ++= Seq(
+      "org.typelevel" %%% "cats-core" % "2.7.0",
+      "org.typelevel" %%% "cats-effect" % "3.3.12",
+      "org.scalameta" %%% "munit" % "0.7.29" % Test,
+      "org.typelevel" %%% "munit-cats-effect-3" % "1.0.7" % Test
+    ),
     Test / test := {
       val _ = (Test / g8Test).toTask("").value
     },
